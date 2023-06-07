@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>PetPlace &mdash; Premium Pet Care</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="img/logo.png" alt="PetPlace logo" />
+      <button class="mobile-nav-button">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-item" href="#">Testimonials</a></li>
+          <li><a class="main-nav-item" href="#">Feed plans</a></li>
+          <li><a class="main-nav-item" href="#">Our app</a></li>
+          <li><a class="main-nav-item" href="#">Food & Accessories</a></li>
+          <li>
+            <a class="cart-nav-button" href="#"
+              ><ion-icon class="cart-icon" name="cart"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="main-nav-item btn margin-right-s margin-bottom-s" href="#"
+              ><ion-icon class="nav-icon" name="person-add"></ion-icon>Sign
+              up</a
+            >
+            <a class="main-nav-item btn" href="#"
+              ><ion-icon class="nav-icon" name="person"></ion-icon>Log in</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text">
+            <h1 class="heading-primary">
+              The place where unconditional love is found under the form of a
+              four-legged fluff ball
+            </h1>
+            <p class="hero-summary">
+              The best pet shop you can find. We will find the best pet soulmate
+              for you just as we did with other over 12,000 pet lovers last
+              year. You just have to ask!
+            </p>
+            <a href="#" class="btn btn--full margin-right-m">Find your pet</a>
+            <a href="#" class="btn btn--outline">Learn more &rarr;</a>
+            <div class="last-year">
+              <div class="last-year-clients">
+                <img src="img/1.jpg" class="client-img" />
+                <img src="img/2.jpg" class="client-img" />
+                <img src="img/3.jpg" class="client-img" />
+                <img src="img/4.jpg" class="client-img" />
+                <img src="img/5.jpg" class="client-img" />
+                <img src="img/6.jpg" class="client-img" />
+              </div>
+              <p class="last-year-numbers">
+                <span>+12,000</span> pets found a new home last year
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="img/hero.png"
+              alt="Dog with a toy in his mouth"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured-brands section">
+        <div class="featured-brands">
+          <h2 class="featered-brands-heading">Featured brands</h2>
+          <div class="brand-flex">
+            <img class="brand-img" src="img/higgins.png" alt="Higgins logo" />
+            <img
+              class="brand-img"
+              src="img/raw-bistro.png"
+              alt="Raw Bistro logo"
+            />
+            <img class="brand-img" src="img/aqueon.png" alt="Aqueon logo" />
+            <img class="brand-img" src="img/fromm.png" alt="Fromm logo" />
+            <img class="brand-img" src="img/primal.png" alt="Primal logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-features section">
+        <div class="features">
+          <div class="feature-box">
+            <div class="feature-mark">
+              <svg
+                id="sw-js-blob-svg"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                class="feature-shape"
+              >
+                <defs>
+                  <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop
+                      id="stop1"
+                      stop-color="rgba(46, 204, 113, 1)"
+                      offset="0%"
+                    ></stop>
+                    <stop
+                      id="stop2"
+                      stop-color="rgba(41, 184, 102, 1)"
+                      offset="100%"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+                <path
+                  fill="url(#sw-gradient)"
+                  d="M28.8,-31.5C36.7,-27.7,42.1,-18,42.5,-8.5C43,1,38.5,10.3,33.4,19.2C28.2,28.1,22.3,36.6,14.7,38.4C7.2,40.3,-2,35.5,-10.7,31.4C-19.4,27.4,-27.6,24,-32.7,17.6C-37.9,11.3,-40.1,1.9,-38.9,-7.2C-37.7,-16.3,-33.2,-25.2,-26.1,-29.2C-19.1,-33.1,-9.5,-32.2,0.5,-32.7C10.5,-33.3,20.9,-35.3,28.8,-31.5Z"
+                  width="100%"
+                  height="100%"
+                  transform="translate(50 50)"
+                  stroke-width="0"
+                  style="transition: all 0.3s ease 0s"
+                  stroke="url(#sw-gradient)"
+                ></path>
+              </svg>
+              <ion-icon class="feature-icon" name="paw-outline"></ion-icon>
+            </div>
+            <h3 class="heading-tertiary">For everyone's taste!</h3>
+            <p class="feature-text">
+              Over 25 breeds of dogs available, 15 breeds of cats along with
+              special toys that will put your pet's intelligence at trial!
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-mark">
+              <svg
+                id="sw-js-blob-svg"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                class="feature-shape"
+              >
+                <defs>
+                  <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop
+                      id="stop1"
+                      stop-color="rgba(46, 204, 113, 1)"
+                      offset="0%"
+                    ></stop>
+                    <stop
+                      id="stop2"
+                      stop-color="rgba(41, 184, 102, 1)"
+                      offset="100%"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+                <path
+                  fill="url(#sw-gradient)"
+                  d="M20.1,-23.9C27.5,-17.6,36.2,-12.8,37.7,-6.3C39.3,0.2,33.8,8.2,28,14.2C22.2,20.2,16.2,24.1,8.9,28.7C1.5,33.2,-7.2,38.4,-14.6,37.1C-22.1,35.7,-28.3,27.8,-30.9,19.6C-33.6,11.4,-32.7,2.9,-31.4,-5.7C-30.2,-14.4,-28.5,-23.1,-23.1,-29.7C-17.8,-36.3,-8.9,-40.8,-1.3,-39.2C6.3,-37.6,12.6,-30.1,20.1,-23.9Z"
+                  width="100%"
+                  height="100%"
+                  transform="translate(50 50)"
+                  stroke-width="0"
+                  style="transition: all 0.3s ease 0s"
+                  stroke="url(#sw-gradient)"
+                ></path>
+              </svg>
+              <ion-icon class="feature-icon" name="fish-outline"></ion-icon>
+            </div>
+            <h3 class="heading-tertiary">Not into fluffs?</h3>
+            <p class="feature-text">
+              We like and embrace diversity! Parrots, turtles, hamsters, and
+              fish in our care, ready to find a new home!
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-mark">
+              <!--?xml version="1.0" standalone="no"?-->
+              <svg
+                id="sw-js-blob-svg"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                class="feature-shape"
+              >
+                <defs>
+                  <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop
+                      id="stop1"
+                      stop-color="rgba(46, 204, 113, 1)"
+                      offset="0%"
+                    ></stop>
+                    <stop
+                      id="stop2"
+                      stop-color="rgba(41, 184, 102, 1)"
+                      offset="100%"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+                <path
+                  fill="url(#sw-gradient)"
+                  d="M26.2,-30.6C32.7,-25.8,35.8,-16.3,37.9,-6.4C39.9,3.5,40.9,13.8,36.6,20.8C32.2,27.9,22.5,31.5,13.2,33.9C3.9,36.3,-5,37.3,-11.6,34C-18.2,30.8,-22.5,23.1,-27.2,15.5C-31.8,7.8,-36.9,0.2,-37.2,-8C-37.5,-16.2,-32.9,-25,-25.9,-29.8C-18.9,-34.6,-9.4,-35.4,0.2,-35.6C9.8,-35.9,19.7,-35.5,26.2,-30.6Z"
+                  width="100%"
+                  height="100%"
+                  transform="translate(50 50)"
+                  stroke-width="0"
+                  style="transition: all 0.3s ease 0s"
+                  stroke="url(#sw-gradient)"
+                ></path>
+              </svg>
+              <ion-icon class="feature-icon" name="ribbon-outline"></ion-icon>
+            </div>
+            <h3 class="heading-tertiary">Quality food & toys!</h3>
+            <p class="feature-text">
+              The best quality food in the market and different kind of toys,
+              all with accesible prices! We care about our costumer's costs!
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-mark">
+              <svg
+                id="sw-js-blob-svg"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                class="feature-shape"
+              >
+                <defs>
+                  <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop
+                      id="stop1"
+                      stop-color="rgba(46, 204, 113, 1)"
+                      offset="0%"
+                    ></stop>
+                    <stop
+                      id="stop2"
+                      stop-color="rgba(41, 184, 102, 1)"
+                      offset="100%"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+                <path
+                  fill="url(#sw-gradient)"
+                  d="M18.7,-28.4C23.8,-25.8,27.3,-19.9,31.6,-13.5C35.9,-7.1,41.1,-0.2,42.1,7.4C43.1,15.1,40.1,23.6,34.3,29.2C28.6,34.9,20.3,37.8,12.4,38.3C4.5,38.8,-2.9,36.9,-9.3,33.9C-15.7,31,-21.1,27,-26.3,22.1C-31.6,17.3,-36.6,11.6,-38.5,4.9C-40.4,-1.8,-39.1,-9.5,-35.6,-15.8C-32,-22,-26.1,-26.7,-19.8,-28.8C-13.5,-30.8,-6.7,-30.2,0,-30.2C6.8,-30.3,13.6,-31,18.7,-28.4Z"
+                  width="100%"
+                  height="100%"
+                  transform="translate(50 50)"
+                  stroke-width="0"
+                  style="transition: all 0.3s ease 0s"
+                  stroke="url(#sw-gradient)"
+                ></path>
+              </svg>
+              <ion-icon
+                class="feature-icon"
+                name="storefront-outline"
+              ></ion-icon>
+            </div>
+            <h3 class="heading-tertiary">Visit our store!</h3>
+            <p class="feature-text">
+              We are present in over 163 cities all over Europe! Look up for the
+              closest one from your home and come meet your pet!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-species section">
+        <div class="species-section-box">
+          <span class="pre-heading">Species</span>
+          <h2 class="heading-secondary">Check out the animals in our care!</h2>
+
+          <div class="species">
+            <div class="species-box">
+              <h3 class="heading-species">Dogs</h3>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/dogphoto1.png"
+                  alt="Retriever Dog"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Golden Retriever</h4>
+                  <p class="breed-description">
+                    The Golden Retriever is a large, strongly built breed with a
+                    dense, water-repellant wavy coat.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <div class="breed">
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Border Collie</h4>
+                  <p class="breed-description">
+                    Border Collies are medium-sized dogs with a coat which is
+                    often thick and frequently sheds.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+                <img
+                  class="breed-img"
+                  src="img/dogphoto2.png"
+                  alt="Photo of Border Collie"
+                />
+              </div>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/dogphoto3.png"
+                  alt="Photo of Beagle"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Beagle</h4>
+                  <p class="breed-description">
+                    Not only is the Beagle an excellent hunting dog and loyal
+                    companion, it is also happy-go-lucky and funny.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <a href="#" class="btn-breeds">See all 25 breeds &rarr;</a>
+            </div>
+
+            <div class="species-box cat">
+              <h3 class="heading-species">Cats</h3>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/catphoto1.png"
+                  alt="Photo of Bengal Cat"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Bengal</h4>
+                  <p class="breed-description">
+                    The Bengal cat is a domesticated cat breed created from a
+                    hybrid of the Asian leopard cat with Egyptian Mau.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <div class="breed">
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">British Shorthair</h4>
+                  <p class="breed-description">
+                    The British Shorthair has a distinctively stocky body, dense
+                    coat, and broad face.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+                <img
+                  class="breed-img"
+                  src="img/catphoto2.png"
+                  alt="Photo of British Shorhair"
+                />
+              </div>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/catphoto3.png"
+                  alt="Photo of American Shorthair"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">American Shorthair</h4>
+                  <p class="breed-description">
+                    The American Shorthair is a pedigree cat breed with a large,
+                    powerfully-built body.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <a href="#" class="btn-breeds">See all 16 breeds &rarr;</a>
+            </div>
+
+            <div class="species-box">
+              <h3 class="heading-species">Parrots</h3>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/parrotphoto1.png"
+                  alt="Photo of Blue and Yellow Macaw"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Blue and Yellow Macaw</h4>
+                  <p class="breed-description">
+                    These birds can reach a length of 76-86 cm and weigh
+                    0.900-1.5 kg , making them some of the larger members of
+                    their family.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <div class="breed">
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Australian King</h4>
+                  <p class="breed-description">
+                    Adults of both sexes are about 43 cm in length, including
+                    the long, broad tail. It has a red head, breast, and lower
+                    undersides, with a blue band on the back of the neck
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+                <img
+                  class="breed-img"
+                  src="img/parrotphoto2.png"
+                  alt="Photo of Autrlian King Parrot "
+                />
+              </div>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/parrotphoto3.png"
+                  alt="Photo of Cockatiel"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Cockatiel</h4>
+                  <p class="breed-description">
+                    The Cockatiel's distinctive crest expresses the animal's
+                    emotional state. The crest is dramatically vertical when the
+                    cockatiel is startled or excited.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <a href="#" class="btn-breeds">See all 14 breeds &rarr;</a>
+            </div>
+
+            <div class="species-box">
+              <h3 class="heading-species">Hamsters</h3>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/hamsterphoto1.png"
+                  alt="Photo of Roborovski Dwarf"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Roborovski Dwarf</h4>
+                  <p class="breed-description">
+                    It lives in the deserts of Central Asia, averaging under 2
+                    centimetres at birth and 4.5-5 centimetres and 20-25 grams
+                    during adulthood.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <div class="breed">
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Syrian (Golden)</h4>
+                  <p class="breed-description">
+                    Also known as teddy bear hamsters, the Syrian hamster is the
+                    most popular pet hamster, especially for children. They
+                    range from from 12 to 23 inches in length.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+                <img
+                  class="breed-img"
+                  src="img/hamsterphoto2.png"
+                  alt="Photo of Golden Hamster "
+                />
+              </div>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/hamsterphoto3.png"
+                  alt="Photo of White Hamster"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Winter White Russian</h4>
+                  <p class="breed-description">
+                    Its fur can turn white in winter. The dwarf winter white
+                    Russian is very docile and is less likely to bite than many
+                    other hamster species.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <a href="#" class="btn-breeds">See all 8 breeds &rarr;</a>
+            </div>
+
+            <div class="species-box">
+              <h3 class="heading-species">Fish</h3>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/fishphoto1.png"
+                  alt="Photo of Goldenfish"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Goldfish</h4>
+                  <p class="breed-description">
+                    It lives in the deserts of Central Asia, averaging under 2
+                    centimetres at birth and 4.5-5 centimetres and 20-25 grams
+                    during adulthood.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <div class="breed">
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Betta Fish</h4>
+                  <p class="breed-description">
+                    It usually grows to a length of about 6-8 cm. Although
+                    aquarium specimens are widely known for their brilliant
+                    colours and large, flowing fins.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+                <img
+                  class="breed-img"
+                  src="img/fishphoto2.png"
+                  alt="Photo of Betta Fish"
+                />
+              </div>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/fishphoto3.png"
+                  alt="Photo of Angelfish"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Angelfish</h4>
+                  <p class="breed-description">
+                    Naturally they are frequently striped, colouration which
+                    provides additional camouflage. Angelfish are ambush
+                    predators and prey on small fish and macroinvertebrates.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <a href="#" class="btn-breeds">See all 11 breeds &rarr;</a>
+            </div>
+
+            <div class="species-box">
+              <h3 class="heading-species">Turtles</h3>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/turtlephoto1.png"
+                  alt="Photo of Eastern Box Turtle"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Eastern Box</h4>
+                  <p class="breed-description">
+                    These cute turtles love of, but their small stature means
+                    that a little space to us is a large amount of space to
+                    them. They don't like to be handled much, and they can be
+                    quite shy.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <div class="breed">
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">Spotted</h4>
+                  <p class="breed-description">
+                    These beautiful turtles are named after all the little spots
+                    on their shells. The Spotted Turtle can live to be very old,
+                    some even living for more than 100 years!
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+                <img
+                  class="breed-img"
+                  src="img/turtlephoto2.png"
+                  alt="Photo of Spotted Turtle "
+                />
+              </div>
+              <div class="breed">
+                <img
+                  class="breed-img"
+                  src="img/turtlephoto3.png"
+                  alt="Photo of African Sideneck"
+                />
+                <div class="breed-text-box">
+                  <h4 class="heading-quaternary">African Sideneck</h4>
+                  <p class="breed-description">
+                    These turtles are unique in that they cannot retract their
+                    heads completely into their shells like most turtles can.
+                    They require a large amount of clean water to swim in.
+                  </p>
+                  <a class="btn">Read more &rarr;</a>
+                </div>
+              </div>
+              <a href="#" class="btn-breeds">See all 8 breeds &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials section">
+        <div class="testimonials-section-box">
+          <span class="pre-heading">Testimonials</span>
+          <h2 class="heading-secondary">
+            See what others think about their experience at PetPlace!
+          </h2>
+          <div class="testimonials">
+            <div class="testimonial-box">
+              <div class="testimonial-header">
+                <img class="testimonial-img" src="img/7.jpg" />
+                <img class="quotation-marks" src="img/quotation-marks.png" />
+              </div>
+              <span>&mdash; Larry Bird</span>
+              <p class="testimonial-text">
+                "The food plan saved me a ton of money! You get enough food for
+                a big dog at much smaller costs than if you buy the food from
+                the store!"
+              </p>
+            </div>
+
+            <div class="testimonial-box">
+              <div class="testimonial-header">
+                <img class="testimonial-img" src="img/8.jpg" />
+                <img class="quotation-marks" src="img/quotation-marks.png" />
+              </div>
+              <span>&mdash; Karina Simson</span>
+              <p class="testimonial-text">
+                "The food delivery program is very convenient! I don't have to
+                worry no more about buying food for my cat on my way home!"
+              </p>
+            </div>
+
+            <div class="testimonial-box">
+              <div class="testimonial-header">
+                <img class="testimonial-img" src="img/6.jpg" />
+                <img class="quotation-marks" src="img/quotation-marks.png" />
+              </div>
+              <span>&mdash; Beatrice O'Neil</span>
+              <p class="testimonial-text">
+                "Very professional! They will video-call you and show the animal
+                you described that you wish before bringing it safely to your
+                door!"
+              </p>
+            </div>
+
+            <div class="testimonial-box">
+              <div class="testimonial-header">
+                <img class="testimonial-img" src="img/9.jpg" />
+                <img class="quotation-marks" src="img/quotation-marks.png" />
+              </div>
+              <span>&mdash; John Keebly</span>
+              <p class="testimonial-text">
+                "I searched everywhere for an Eastern Box turtle and this place
+                is the only one that had such a turtle! Such a diversity in this
+                store!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-feed-plans section">
+        <span class="pre-heading">Feed plans</span>
+        <h2 class="heading-secondary">
+          Feed your pet with best quality food brought by us to your door!
+        </h2>
+        <div class="feed-plans">
+          <div class="feed-plan-box">
+            <img
+              class="feed-plan-img"
+              src="img/feedplanphoto1.png"
+              alt="Cat eating"
+            />
+            <div>
+              <h3 class="heading-feed-plan">Standard</h3>
+              <p class="feed-plan-price">
+                €<span class="price-number"> 94.99</span>/month <br />
+                <span class="additional-info">
+                  *Recommanded for small pets</span
+                >
+              </p>
+            </div>
+            <ul class="feed-plan-list">
+              <li class="feed-plan-item">
+                <ion-icon
+                  class="feed-plan-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon
+                ><span>Premium food 4 times a month</span>
+              </li>
+              <li class="feed-plan-item">
+                <ion-icon
+                  class="feed-plan-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon
+                ><span>Delivery to your door every monday</span>
+              </li>
+              <li class="feed-plan-item">
+                <ion-icon
+                  class="feed-plan-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span>Free delivery</span>
+              </li>
+              <li class="feed-plan-item">
+                <ion-icon
+                  class="feed-plan-icon"
+                  name="close-circle-outline"
+                ></ion-icon>
+              </li>
+            </ul>
+            <a href="#" class="btn btn--full btn--2">Feed your pet</a>
+          </div>
+
+          <div class="feed-plan-box premium-plan">
+            <img
+              class="feed-plan-img"
+              src="img/feedplanphoto2.png"
+              alt="Cat eating"
+            />
+            <div>
+              <h3 class="heading-feed-plan">Premium</h3>
+              <p class="feed-plan-price">
+                €<span class="price-number"> 134.99</span>/month <br />
+                <span class="additional-info">
+                  *Recommanded for medium and large-sized dogs</span
+                >
+              </p>
+            </div>
+            <ul class="feed-plan-list">
+              <li class="feed-plan-item">
+                <ion-icon
+                  class="feed-plan-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon
+                ><span>Premium food 8 times a month</span>
+              </li>
+              <li class="feed-plan-item">
+                <ion-icon
+                  class="feed-plan-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon
+                ><span>Delivery every monday and thursday</span>
+              </li>
+              <li class="feed-plan-item">
+                <ion-icon
+                  class="feed-plan-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span>Free delivery</span>
+              </li>
+              <li class="feed-plan-item">
+                <ion-icon
+                  class="feed-plan-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon
+                ><span>Get a toy every month</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn--full btn--2">Feed your pet</a>
+          </div>
+        </div>
+        <aside class="plan-details">
+          Prices include all applicable taxes. You can cancel at any time.
+        </aside>
+      </section>
+
+      <section class="section-how section">
+        <span class="pre-heading">Our app</span>
+        <h2 class="heading-secondary margin-bottom-s">
+          Here are the 3 steps to follow in order to get a new pet!
+        </h2>
+        <div class="available-platforms">
+          <img class="available-img" src="img/appstore.png" />
+          <img class="available-img" src="img/googleplay.png" />
+        </div>
+        <div class="how">
+          <div class="how-text">
+            <span class="step-number">01</span>
+            <h3 class="heading-tertiary">Tell us what you wish for</h3>
+            <p class="step-description">
+              Tell us what kind of pet (species and breed) you would love to
+              have using our app. One of our operators will get in touch with
+              you by video call to make the first visual ecounter with your pet.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img src="img/how1.png" class="how-img" />
+          </div>
+          <div class="step-img-box">
+            <img src="img/how2.png" class="how-img" />
+          </div>
+          <div class="how-text">
+            <span class="step-number">02</span>
+            <h3 class="heading-tertiary">Confirm and order</h3>
+            <p class="step-description">
+              We will get your pet to your door as quick as a wink. Just tell us
+              where and when we can find you. You can order food and toys for
+              the little one that we can also deliver for free to your house.
+            </p>
+          </div>
+          <div class="how-text">
+            <span class="step-number">03</span>
+            <h3 class="heading-tertiary">Choose your plan</h3>
+            <p class="step-description">
+              Optionally, you can choose one of our plans to keep your pet
+              well-fed and cared. Every start of the week we will deliver
+              premium food for your pet at lower cost than usual! In addition,
+              with our premium plan, we will bring one toy every start of the
+              month and all of these with no delivery cost!
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img src="img/how3.png" class="how-img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-ft section">
+        <span class="pre-heading">Food & accessories</span>
+        <h2 class="heading-secondary">
+          Shop for the highest quality food and the most entertaining toys in
+          the market
+        </h2>
+        <div class="food">
+          <h3 class="heading-tertiary">Food for pets</h3>
+          <span class="ft-span"
+            >Tell us about your pet to show you the recommanded goodies:</span
+          >
+          <div class="input-box">
+            <select id="pet-select" name="select-where">
+              <option value>Category:</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="parrot">Parrot</option>
+              <option value="fish">Fish</option>
+              <option value="hamster">Hamster</option>
+              <option value="turtle">Turtle</option>
+            </select>
+
+            <select id="pet-select" name="select-where">
+              <option value>Age:</option>
+              <option value="less-than-one-month">< 1 month</option>
+              <option value="one-month-to-three-months">
+                1 month - 3 months
+              </option>
+              <option value="three-months-to-one-year">
+                3 months - 1 year
+              </option>
+              <option value="one-year-to-three-years">1 year - 3 years</option>
+              <option value="more-than-three-years">> 3 years</option>
+            </select>
+
+            <select id="pet-select" name="select-where">
+              <option value>Weight:</option>
+              <option value="less-than-500g">< 500g</option>
+              <option value="500g-to-1kg">500g - 1kg</option>
+              <option value="1kg-to-2kg">1kg - 2kg</option>
+              <option value="2kg-to-3kg">2kg - 3kg</option>
+              <option value="more-than-3gh">> 3kg</option>
+            </select>
+          </div>
+          <button class="apply">Apply</button>
+          <div class="food-grid">
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/dog/dogfood1.png" />
+              <span class="food-price">€6.99</span>
+              <span class="food-description"
+                >Fromm Dog Can - venison & beef pate</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/dog/dogfood4.png" />
+              <div>
+                <span class="food-price reduced">€10.99</span
+                ><span class="new-price">€8.99</span>
+              </div>
+
+              <span class="food-description"
+                >Primal Dog Food - freezed & dried beef</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/dog/dogfood2.png" />
+              <span class="food-price">€6.99</span>
+              <span class="food-description">Fromm Dog Can - chicken pate</span>
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/dog/dogfood3.png" />
+              <span class="food-price">€6.99</span>
+              <span class="food-description"
+                >Fromm Dog Can - turkey & pumpkin pate</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/cat/catfood2.png" />
+              <span class="food-price">€4.99</span>
+              <span class="food-description"
+                >Fromm Cat Can - duck & chicken pate</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/cat/catfood1.png" />
+              <span class="food-price">€4.99</span>
+              <span class="food-description"
+                >Fromm Cat Can - shreded chicken</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/parrot/parrotfood3.png" />
+              <span class="food-price">€5.49</span>
+              <span class="food-description"
+                >Higgins Parrot Food - Mayan Harvest</span
+              >
+            </div>
+            <div class="food-cell twoplusone">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/parrot/parrotfood2.png" />
+              <span class="food-price">€5.49</span>
+              <span class="food-description"
+                >Higgins Parrot Food - Intune Natural</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/dog/dogfood10.png" />
+              <span class="food-price">€13.49</span>
+              <span class="food-description"
+                >Raw Bistro Dog Food - turkey entree</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/dog/dogfood9.png" />
+              <span class="food-price">€13.49</span>
+              <span class="food-description"
+                >Raw Bistro Dog Food - bison liver stix</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/fish/fishfood1.png" />
+              <div>
+                <span class="food-price reduced">€7.99</span
+                ><span class="new-price">€6.49</span>
+              </div>
+              <span class="food-description"
+                >Aqueon Fish Food - Monster Fish Medley</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/fish/fishfood2.png" />
+              <span class="food-price">€7.49</span>
+              <span class="food-description"
+                >Aqueon Fish Food - Algae Rounds</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/fish/fishfood3.png" />
+              <span class="food-price">€4.49</span>
+              <span class="food-description"
+                >Aqueon Fish Food - Tropical Flakes</span
+              >
+            </div>
+            <div class="food-cell twoplusone">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/fish/fishfood6.png" />
+              <span class="food-price">€4.49</span>
+              <span class="food-description"
+                >Aqueon Fish Food - Goldfish Flakes</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/food/hamster/hamsterfood2.png" />
+              <span class="food-price">€11.49</span>
+              <span class="food-description"
+                >Higgins Hamster Food - Natural Blend</span
+              >
+            </div>
+          </div>
+          <div class="arrow-nav">
+            <ion-icon
+              class="food-left-arrow food-arrow"
+              name="chevron-back-outline"
+            ></ion-icon>
+            <ion-icon
+              class="food-right-arrow food-arrow"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </div>
+        </div>
+
+        <div class="accessories">
+          <h3 class="heading-tertiary">Toys and accessories</h3>
+          <span class="ft-span"
+            >Tell us about your pet to recommand you something that he will
+            enjoy:</span
+          >
+          <div class="input-box">
+            <select id="pet-select" name="select-where">
+              <option value>Category:</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="parrot">Parrot</option>
+              <option value="fish">Fish</option>
+              <option value="hamster">Hamster</option>
+              <option value="turtle">Turtle</option>
+            </select>
+
+            <select id="pet-select" name="select-where">
+              <option value>Age:</option>
+              <option value="less-than-one-month">< 1 month</option>
+              <option value="one-month-to-three-months">
+                1 month - 3 months
+              </option>
+              <option value="three-months-to-one-year">
+                3 months - 1 year
+              </option>
+              <option value="one-year-to-three-years">1 year - 3 years</option>
+              <option value="more-than-three-years">> 3 years</option>
+            </select>
+          </div>
+          <button class="apply">Apply</button>
+          <div class="food-grid">
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/dogtoy1.png" />
+              <span class="food-price">€16.99</span>
+              <span class="food-description"
+                >Dog Toy - super soft squeaky dog</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/dogcollar1.png" />
+              <span class="food-price">€19.99</span>
+              <span class="food-description"
+                >Dog Collar - country brook premium collar</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/catcarrier1.png" />
+              <span class="food-price">€32.49</span>
+              <span class="food-description"
+                >Cat Carrier - pink karmas carrier</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/dogleash1.png" />
+              <span class="food-price">€12.99</span>
+              <span class="food-description"
+                >Dog Leash - green large rectatable leash</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/catscratcher1.png" />
+              <span class="food-price">€54.99</span>
+              <span class="food-description"
+                >Cat Scratcher - post scratcher</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/dogtoy3.png" />
+              <span class="food-price">€12.99</span>
+              <span class="food-description"
+                >Dog Toy - super soft squeaky hedgehog toy</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/dogcollar2.png" />
+              <span class="food-price">€19.49</span>
+              <span class="food-description"
+                >Cat Collar - orange premium collar</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/dogcollar3.png" />
+              <span class="food-price">€19.49</span>
+              <span class="food-description"
+                >Dog Collar - premium orange camo collar</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/birdcage1.png" />
+              <span class="food-price">€72.49</span>
+              <span class="food-description"
+                >Parrot Cage - medium bird cage with perch</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/birdcage2.png" />
+              <span class="food-price">€58.49</span>
+              <span class="food-description"
+                >Parrot Cage - small bird cage</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/hamstercage1.png" />
+              <span class="food-price">€67.49</span>
+              <span class="food-description"
+                >Hamster Cage - large colorful cage</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/cattoy1.png" />
+              <span class="food-price">€9.49</span>
+              <span class="food-description"
+                >Cat Toy - vibrating mouse toy
+              </span>
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/fishtank1.png" />
+              <span class="food-price">€102.99</span>
+              <span class="food-description"
+                >Fish Tank - medium tank with curved glass</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/fishtank2.png" />
+              <div>
+                <span class="food-price reduced">€81.49</span
+                ><span class="new-price">€76.49</span>
+              </div>
+              <span class="food-description"
+                >Fish Tank - small tank with curved glass</span
+              >
+            </div>
+            <div class="food-cell">
+              <img class="cart" src="img/cart.png" />
+              <img class="food-img" src="img/accessories/dogtoy2.png" />
+              <span class="food-price">€9.49</span>
+              <span class="food-description"
+                >Dog Toy - super soft squeaky raccoon toy</span
+              >
+            </div>
+          </div>
+          <div class="arrow-nav">
+            <ion-icon
+              class="food-left-arrow food-arrow"
+              name="chevron-back-outline"
+            ></ion-icon>
+            <ion-icon
+              class="food-right-arrow food-arrow"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section-footer section">
+      <div class="footer">
+        <div class="footer-collumn logo-col">
+          <img src="img/logo.png" class="footer-logo" />'
+
+          <div class="social-media">
+            <a href="#" class="footer-link"
+              ><ion-icon
+                class="social-media-icon"
+                name="logo-facebook"
+              ></ion-icon
+            ></a>
+            <a href="#" class="footer-link"
+              ><ion-icon
+                class="social-media-icon"
+                name="logo-instagram"
+              ></ion-icon
+            ></a>
+            <a href="#" class="footer-link"
+              ><ion-icon
+                class="social-media-icon"
+                name="logo-whatsapp"
+              ></ion-icon
+            ></a>
+            <a href="#" class="footer-link"
+              ><ion-icon
+                class="social-media-icon"
+                name="logo-twitter"
+              ></ion-icon
+            ></a>
+            <a href="#" class="footer-link"
+              ><ion-icon
+                class="social-media-icon"
+                name="logo-pinterest"
+              ></ion-icon
+            ></a>
+          </div>
+          <span class="footer-span"
+            >Copyright © 2023 by PetPlace, Inc. All rights reserved.</span
+          >
+        </div>
+        <div class="footer-collumn contact-col">
+          <span class="footer-span-strong">Contact us</span>
+          <span class="footer-span"
+            >64 Madison St., 4th Floor, London, 54146</span
+          >
+          <span class="footer-span">523-227-5770</span>
+          <span class="footer-span">petcare@petplace.com</span>
+        </div>
+        <div class="footer-collumn">
+          <span class="footer-span-strong">Account</span>
+          <a href="#" class="footer-link">Create account</a>
+          <a href="#" class="footer-link">Sign in</a>
+          <a href="#" class="footer-link">iOS app</a>
+          <a href="#" class="footer-link">Android app</a>
+        </div>
+        <div class="footer-collumn">
+          <span class="footer-span-strong">Company</span>
+          <a href="#" class="footer-link">About PetPlace </a>
+          <a href="#" class="footer-link">Pet care partners </a>
+          <a href="#" class="footer-link">For Business </a>
+          <a href="#" class="footer-link">Careers</a>
+        </div>
+        <div class="footer-collumn">
+          <span class="footer-span-strong">Resources</span>
+          <a href="#" class="footer-link">Help center</a>
+          <a href="#" class="footer-link">Privacy & terms</a>
+          <a href="#" class="footer-link">FAQ</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,437 @@
+/* bellow 1872px */
+@media (max-width: 117em) {
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24.2rem;
+  }
+
+  .food-grid {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+}
+
+/* bellow 1630px */
+@media (max-width: 102em) {
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+  }
+
+  .mobile-nav-button {
+    display: block;
+    z-index: 9999;
+  }
+}
+
+/* bellow 1520px */
+@media (max-width: 95em) {
+  .food-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* bellow 1360 */
+
+@media (max-width: 85em) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 2.4rem;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .btn--full,
+  .btn--outline {
+    width: 40rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .brand-img {
+    height: 50%;
+  }
+
+  .features {
+    padding: 0 12.8rem;
+  }
+
+  .feed-plans {
+    flex-direction: column;
+    gap: 3.6rem;
+    align-items: center;
+  }
+
+  .footer {
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    row-gap: 3.6rem;
+  }
+
+  .footer-collumn {
+    grid-column: span 2;
+  }
+
+  .logo-col,
+  .contact-col {
+    grid-column: span 3;
+  }
+}
+
+/* bellow 1056px */
+
+@media (max-width: 66em) {
+  .features {
+    padding: 0 6.4rem;
+  }
+
+  .food-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section {
+    margin: 9.6rem 6.4rem;
+  }
+
+  .brand-img {
+    height: 50%;
+  }
+}
+
+/*bellow 912px */
+
+@media (max-width: 57em) {
+  .features {
+    grid-template-columns: 1fr;
+    row-gap: 6.4rem;
+  }
+  .how {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 3.6rem;
+  }
+
+  .step-img-box::after {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+
+  .step-img-box::before {
+    width: 70%;
+    padding-bottom: 70%;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1/2;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5/6;
+  }
+
+  .how-text {
+    margin: 0;
+  }
+
+  .input-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 3.6rem;
+  }
+
+  #pet-select {
+    width: 80%;
+  }
+
+  /* .apply {
+    width: 80%;
+    height: 80%;
+  } */
+}
+
+/* below 800px */
+
+@media (max-width: 50em) {
+  .brand-flex {
+    justify-content: space-between;
+  }
+
+  .species {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+
+  .brand-img {
+    height: 30%;
+  }
+
+  .feed-plan-box {
+    width: 100%;
+    padding: 6.4 20rem;
+  }
+}
+
+/* below 640px */
+@media (max-width: 40em) {
+  .how-img {
+    width: 50%;
+  }
+  .food-grid {
+    column-gap: 3.6rem;
+  }
+
+  .food-img {
+    width: 30%;
+    height: 30%;
+  }
+
+  .food-price {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .food-description {
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+
+  .food-cell {
+    width: 20rem;
+    height: 20rem;
+    padding: 2.4rem;
+  }
+}
+
+/* bellow 448px */
+
+@media (max-width: 28em) {
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+
+  .pre-heading {
+    font-size: 1.6rem;
+  }
+
+  .hero-summary {
+    font-size: 2rem;
+  }
+
+  .btn--full,
+  .btn--outline {
+    width: 30rem;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .brand-flex {
+    align-content: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .features {
+    padding: 0;
+  }
+
+  .species-box {
+    width: 85%;
+  }
+
+  .feed-plan-icon {
+    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .feed-plan-price {
+    font-size: 3rem;
+  }
+
+  .price-number {
+    font-size: 3.6rem;
+  }
+
+  .additional-info {
+    font-size: 2rem;
+  }
+
+  .feed-plan-item span {
+    font-size: 1.6rem;
+  }
+
+  .feed-plan-box {
+    padding: 6.4rem 1.2rem;
+    letter-spacing: -1px;
+  }
+
+  .btn--2 {
+    width: 20rem !important;
+    font-size: 2.4rem !important;
+  }
+
+  .premium-plan:after {
+    font-size: 1.2rem;
+    top: 39px;
+  }
+
+  .available-img {
+    width: 40%;
+    height: auto;
+  }
+
+  .how-text {
+    height: 50rem;
+  }
+
+  .how {
+    margin-bottom: 30rem;
+  }
+
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .food-img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .food-description {
+    font-size: 2rem;
+  }
+
+  .food-cell {
+    padding: 1rem;
+    gap: 1.2rem;
+    justify-content: stretch;
+    height: 15rem;
+  }
+
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .twoplusone:after {
+    font-size: 0.8rem;
+    padding: 1.2 2.4rem;
+    top: 21px;
+  }
+
+  .new-price {
+    font-size: 2.4rem;
+  }
+
+  .footer-span {
+    font-size: 1.6rem;
+  }
+
+  .footer-link {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-col,
+  .contact-col {
+    grid-column: span 1;
+  }
+  .footer-collumn {
+    grid-column: span 1;
+  }
+
+  .footer-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .social-media-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  .header {
+    padding: 1.2rem 2.4rem;
+  }
+}
